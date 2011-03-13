@@ -90,7 +90,6 @@ override_dh_install:
 	mkdir -p debian/xbmc-live/etc/xbmc
 	cp -rf live-scripts/live.d debian/xbmc-live/etc/xbmc
 	# Delete stuff that is in other packages
-	rm -rf debian/xbmc-data/usr/share/xbmc/addons/skin.*
 	rm -rf debian/xbmc-data/usr/share/xbmc/web
 
 override_dh_strip:
